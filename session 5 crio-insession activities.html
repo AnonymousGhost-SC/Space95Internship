@@ -230,3 +230,60 @@
     </ul>
   </body>
 </html>
+
+<!-- media query--> 
+
+A media query is a CSS technique used to apply styles based on the device’s screen size, resolution, or other properties. It helps make websites responsive by adjusting layouts for different screen sizes.
+<!-- example.1 -->
+<!--  Change background color for small screens -->
+
+body {
+  background-color: white;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+<!-- example.2 -->
+<!-- Make text larger on bigger screens -->
+@media (min-width: 1024px) {
+  p {
+    font-size: 20px;
+  }
+}
+<!-- example.3 -->
+<!--  Hide an element on mobile -->
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+<!-- CSS Grid -->
+
+CSS Grid is a layout system that allows you to create responsive and flexible grid-based designs. It works by defining rows and columns in a container and placing elements accordingly.
+
+<!-- example.1 -->
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: auto; /* Rows adjust automatically */
+  gap: 10px; /* Space between grid items */
+}
+
+<!-- example.2 -->
+<!--  Simple 2x2 Grid -->
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+}
+
+<!-- Grid with Different Column Sizes -->
+.grid-container {
+display: grid;
+grid-template-columns: 200px 1fr 2fr;
+}
