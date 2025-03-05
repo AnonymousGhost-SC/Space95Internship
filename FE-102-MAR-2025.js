@@ -33,3 +33,27 @@ car.start();  // Output: Car is starting...
 4.shift and unshift operations
 
 // so in the first session they again went through the fundamentals of javascript
+
+// second session
+Arrow Functions (=>)
+
+Arrow functions provide a shorter syntax for writing functions in JavaScript. 
+They automatically bind this and are useful for concise function expressions.
+
+const add = (a, b) => a + b;
+console.log(add(2, 3)); // 5
+
+forEach()
+The forEach() method executes a function for each element in an array but does not return a new array.
+
+const numbers = [1, 2, 3];
+numbers.forEach(num => console.log(num * 2)); 
+// Output: 2, 4, 6
+
+filter()
+The filter() method creates a new array with elements that pass a given test (returns true).
+
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // [2, 4]
+
